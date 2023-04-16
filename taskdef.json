@@ -1,0 +1,18 @@
+{
+    "family": "Test",
+    "containerDefinitions": [
+        {
+            "image": "191911277331.dkr.ecr.us-east-2.amazonaws.com/helloworld2:pythonhello",
+            "name": "hello-world",
+            "cpu": 10,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8000,
+                    "hostPort": 80
+                }
+            ]
+        }
+    ]
+}
